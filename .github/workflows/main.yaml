@@ -8,3 +8,8 @@ jobs:
     steps:
       - name: Say hello
         run: echo "hello from CI"
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Test python
+        run: python3 -m unittest discover -v
