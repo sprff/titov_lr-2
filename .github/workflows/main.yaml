@@ -11,5 +11,7 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout repository
+        uses: actions/checkout@v7
       - name: Test python
         run: python3 -m unittest discover -v
